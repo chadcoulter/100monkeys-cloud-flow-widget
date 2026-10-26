@@ -1,5 +1,7 @@
 # Cloud Flow developer guide
 
+The default application is now the JSON-driven wiki card reader. Start with [Wiki cards from JSON](./wiki-json.md) for its input format, content markup, nested stack definitions, and `WikiStacks` component. The graph APIs below remain the shared domain/navigation foundation. The capability-only reference demo is available at `/?demo=graph` for compatibility testing.
+
 ## Run the explorer
 
 Use Node 22.12+ (validated locally on Node 24) and the root `packageManager` version, pnpm 10.33.4.

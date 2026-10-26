@@ -17,7 +17,7 @@
     "./style.css": "./dist/style.css"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && node -e \"require('fs').copyFileSync('src/style.css','dist/style.css')\"",
+    "build": "tsc -p tsconfig.build.json && node -e \"const fs=require('fs');fs.copyFileSync('src/style.css','dist/style.css');fs.appendFileSync('dist/style.css',fs.readFileSync('src/wiki.css'))\"",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test test/*.test.ts",
     "lint": "eslint src test --ext .ts,.tsx"

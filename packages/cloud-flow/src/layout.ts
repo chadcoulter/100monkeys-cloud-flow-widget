@@ -8,6 +8,7 @@ export type LayoutOptions = {
   nodeType?: string;
   relationshipType?: string;
   viewportWidth?: number;
+  wikiCards?: boolean;
 };
 export type CardData = Record<string, unknown> & {
   kind: 'card' | 'stack' | 'notice';
@@ -31,9 +32,7 @@ type Box = {
   data: CardData;
   children: { box: Box; x: number; y: number; id: string }[];
 };
-const W = 250,
-  H = 126,
-  GAP = 24,
+const GAP = 24,
   PAD = 18,
   HEADER = 80;
 export function layoutCloud(
@@ -43,6 +42,8 @@ export function layoutCloud(
 ): { nodes: CloudCanvasNode[]; edges: Edge[] } {
   const nodes: CloudCanvasNode[] = [];
   const edges: Edge[] = [];
+  const W = options.wikiCards ? 330 : 250;
+  const H = options.wikiCards ? 360 : 126;
   const depthLimit = Math.min(8, Math.max(1, options.maxDepth ?? 3));
   const memberLimit = Math.min(50, Math.max(1, options.maxMembers ?? 8));
   let budget = 400;
@@ -52,10 +53,17 @@ export function layoutCloud(
   function card(id: string, extra: Partial<CardData> = {}): Box {
     const domainNode = graph.nodes.get(id)!;
     return {
-      width: W,
-      height: H,
+      width: options.wikiCards && extra.focused ? 470 : W,
+      height: options.wikiCards && extra.focused ? 540 : H,
       children: [],
-      data: { kind: 'card', label: domainNode.label, domainNode, width: W, height: H, ...extra },
+      data: {
+        kind: 'card',
+        label: domainNode.label,
+        domainNode,
+        width: options.wikiCards && extra.focused ? 470 : W,
+        height: options.wikiCards && extra.focused ? 540 : H,
+        ...extra,
+      },
     };
   }
   function stackBox(stack: CloudStack, depth: number, seen: Set<string>): Box {
@@ -124,8 +132,8 @@ export function layoutCloud(
     breadcrumbId: state.breadcrumbHeadId,
     subtitle: 'Current focus',
   });
-  let centerWidth = W,
-    centerHeight = H;
+  let centerWidth = focus.width,
+    centerHeight = focus.height;
   let excludedRoot: string | null = null;
   if (state.activeStackId) {
     let selected = state.stacks[state.activeStackId];
@@ -199,7 +207,7 @@ export function layoutCloud(
     bottom:
       Math.max(centerHeight, branchY, ancestors.length ? Math.min(ancestors.length, memberLimit) * (H + GAP) : H) + 100,
     left: Math.max(centerHeight, ancestors.length * (H + GAP)) + 100,
-    right: Math.max(branchY, centerHeight) + 100,
+    right: options.wikiCards && !branchY ? 0 : Math.max(branchY, centerHeight) + 100,
   };
   const rootBoxes = roots.map((s) => ({ s, box: stackBox(s, 0, new Set()) }));
   // Reserve the full width of the top/bottom lanes before placing side stacks.
@@ -207,6 +215,13 @@ export function layoutCloud(
     centerWidth,
     ...rootBoxes.filter(({ s }) => s.side === 'top' || s.side === 'bottom').map(({ box }) => box.width)
   );
+  if (options.wikiCards)
+    laneCursor.bottom = Math.max(
+      laneCursor.bottom,
+      laneCursor.right +
+        rootBoxes.filter(({ s }) => s.side === 'right').reduce((height, { box }) => height + box.height + GAP, 0) +
+        100
+    );
   for (const { s, box } of rootBoxes) {
     let x = 0,
       y = 0;
@@ -224,7 +239,7 @@ export function layoutCloud(
       laneCursor.left += box.height + GAP;
     }
     if (s.side === 'right') {
-      x = middleWidth + 100;
+      x = options.wikiCards ? centerWidth + 60 : middleWidth + 100;
       y = laneCursor.right;
       laneCursor.right += box.height + GAP;
     }

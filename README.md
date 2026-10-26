@@ -18,6 +18,8 @@ pnpm dev:cloud
 
 Open http://127.0.0.1:3010. Use Node 22.12+ and pnpm 10.33.4. Run `pnpm build:cloud`, `pnpm check:cloud`, and `pnpm test:cloud` for validation (install Chromium with `pnpm exec playwright install chromium` before browser tests).
 
+The default demo builds **wiki information cards and nested stacks directly from JSON**. Pages supply titles and full text; stack definitions supply ordering, horizontal/vertical grouping, and nesting. Use **Load wiki JSON** or **Edit JSON → Build stacks** to supply your content. See [`docs/wiki-json.md`](./docs/wiki-json.md) for the simple format and [`examples/cloud-flow/src/wiki.json`](./examples/cloud-flow/src/wiki.json) for a complete sample.
+
 The breadcrumb stack preserves both how you arrived and where you have already explored from each visit. Returning restores its onward branches and nested stacks. Separate visits may reference one shared domain node. See the developer guide for the implemented extensions to the suggested types below.
 
 ## Mission and implementation brief

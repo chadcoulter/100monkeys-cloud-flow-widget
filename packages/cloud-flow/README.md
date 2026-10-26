@@ -2,6 +2,8 @@
 
 A React/TypeScript capability-graph explorer built on React Flow. Recursive breadcrumb stacks preserve the route to a focus and all onward explorations from that visit. Shared capabilities retain one domain identity across visits.
 
+`WikiStacks` renders full wiki page content as cards and builds horizontal/vertical nested stacks from a `wiki-stacks` JSON document. `CloudFlow` selects this reader automatically for wiki input. See `docs/wiki-json.md` and the `examples/cloud-flow/src/wiki.json` sample in the repository.
+
 This package is currently provided in the [100 Monkeys repository](https://github.com/chadcoulter/100monkeys-cloud-flow-widget); it has not been published to npm.
 
 ```tsx

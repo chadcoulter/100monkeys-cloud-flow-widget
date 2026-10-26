@@ -9,7 +9,8 @@ import {
   useReactFlow,
   type NodeProps,
 } from '@xyflow/react';
-import { indexGraph, nodeTypes, relationshipLabels, type CloudFlowDocument } from './domain.js';
+import { indexGraph, nodeTypes, relationshipLabels, type CloudFlowDocument, type WikiDocument } from './domain.js';
+import { WikiStacks } from './wiki-react.js';
 import {
   back,
   boltStack,
@@ -93,7 +94,7 @@ function CanvasCard({ data }: NodeProps<CloudCanvasNode>) {
 const nodeRenderers = { cloudCard: CanvasCard };
 
 export type CloudFlowProps = {
-  document: CloudFlowDocument;
+  document: CloudFlowDocument | WikiDocument;
   initialFocusNodeId?: string;
   initialViewState?: CloudFlowViewState;
   viewState?: CloudFlowViewState;
@@ -105,6 +106,7 @@ export type CloudFlowProps = {
 };
 export function CloudFlow(props: CloudFlowProps) {
   const graph = useMemo(() => indexGraph(props.document), [props.document]);
+  if (graph.document.presentation?.kind === 'wiki') return <WikiStacks {...props} document={graph.document} />;
   return (
     <ReactFlowProvider>
       <Explorer key={JSON.stringify(graph.document)} {...props} graph={graph} />

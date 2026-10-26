@@ -14,6 +14,8 @@
 
 The root README is the supplied 100 Monkeys implementation brief, with a quick start added. `packages/cloud-flow` adds graph validation/indexing, breadcrumb navigation, nested stacks, deterministic layout, React orchestration, and UI. `examples/cloud-flow` adds a runnable capability explorer, sourced sample JSON, and Playwright scenarios. No React Flow or Svelte Flow internals are rewritten.
 
+The default demo now uses the `wiki-stacks` format: full page text and wiki links become information cards, and explicit JSON stack records determine ordering and recursive horizontal/vertical grouping. The underlying navigation still preserves shared identities and route-specific visits.
+
 ## Updating upstream
 
 Add the upstream remote with `git remote add upstream https://github.com/xyflow/xyflow.git` if it is absent. Fetch upstream, inspect its changes, and merge the chosen upstream revision into a dedicated update branch. Resolve workspace/lockfile conflicts while preserving the Cloud Flow package, demo, README, original README, and license notices. Run `pnpm build:cloud`, `pnpm check:cloud`, and `pnpm test:cloud`, along with applicable upstream checks. Record the newly adopted upstream commit here after verification. Upstream updates are deliberate, not automatic dependency replacement.

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?demo=graph');
 });
 const traverse = (page: import('@playwright/test').Page, label: string) =>
   page.getByRole('button', { name: label, exact: true }).click();

@@ -7,7 +7,7 @@ export type Breadcrumb = {
   incomingEdgeId: string | null;
   childEdgeIds: string[];
   childBreadcrumbIds: string[];
-  arrival: 'start' | 'traverse' | 'search';
+  arrival: 'start' | 'traverse' | 'search' | 'open';
   reverse: boolean;
 };
 export type StackMember =
@@ -63,6 +63,59 @@ function nextId(prefix: string, records: object): string {
   return `${prefix}${i}`;
 }
 function addRelationshipStacks(graph: GraphIndex, state: CloudFlowViewState, crumb: Breadcrumb) {
+  const presentation = graph.document.presentation;
+  if (presentation?.kind === 'wiki') {
+    const definitions = new Map(presentation.stacks.map((s) => [s.id, s]));
+    const nested = new Set(
+      presentation.stacks.flatMap((s) => s.members.flatMap((m) => ('stackId' in m ? [m.stackId] : [])))
+    );
+    const roots = presentation.stacks.filter((s) => s.anchorPageId === crumb.currentNodeId && !nested.has(s.id));
+    const instantiate = (definitionId: string, parentStackId: string | null): string => {
+      const definition = definitions.get(definitionId)!;
+      const id = nextId('s', state.stacks);
+      const stack: CloudStack = {
+        id,
+        parentStackId,
+        anchorNodeId: crumb.currentNodeId,
+        anchorEdgeId: null,
+        anchorBreadcrumbId: crumb.id,
+        label: definition.title,
+        orientation: definition.orientation,
+        side: definition.side,
+        expanded: definition.expanded ?? true,
+        bolted: false,
+        members: [],
+      };
+      state.stacks[id] = stack;
+      stack.members = definition.members.map((m) => {
+        if ('stackId' in m) return { kind: 'stack', id: instantiate(m.stackId, id) };
+        const edge = graph.outgoing.get(crumb.currentNodeId)!.find((e) => e.target === m.pageId);
+        return { kind: 'node', id: m.pageId, edgeId: edge?.id ?? null, reverse: false };
+      });
+      return id;
+    };
+    for (const root of roots) instantiate(root.id, null);
+    if (roots.length) return;
+    for (const reverse of [false, true]) {
+      const edges = (reverse ? graph.incoming : graph.outgoing).get(crumb.currentNodeId)!;
+      if (!edges.length) continue;
+      const id = nextId('s', state.stacks);
+      state.stacks[id] = {
+        id,
+        parentStackId: null,
+        anchorNodeId: crumb.currentNodeId,
+        anchorEdgeId: null,
+        anchorBreadcrumbId: crumb.id,
+        label: reverse ? 'Referenced by' : 'Linked pages',
+        side: reverse ? 'bottom' : 'right',
+        orientation: reverse ? 'horizontal' : 'vertical',
+        expanded: true,
+        bolted: false,
+        members: edges.map((e) => ({ kind: 'node', id: reverse ? e.source : e.target, edgeId: e.id, reverse })),
+      };
+    }
+    return;
+  }
   for (const reverse of [false, true]) {
     const edges = (reverse ? graph.incoming : graph.outgoing).get(crumb.currentNodeId)!;
     if (!edges.length) continue;
@@ -112,6 +165,12 @@ export function traverse(
 export function searchFocus(graph: GraphIndex, input: CloudFlowViewState, nodeId: string): CloudFlowViewState {
   if (!graph.nodes.has(nodeId)) throw new Error(`Unknown search node "${nodeId}"`);
   return arrive(graph, input, nodeId, null, false, 'search');
+}
+export function openPage(graph: GraphIndex, input: CloudFlowViewState, nodeId: string): CloudFlowViewState {
+  if (!graph.nodes.has(nodeId)) throw new Error(`Unknown wiki page "${nodeId}"`);
+  if (nodeId === input.focusNodeId) return { ...input, activeStackId: null };
+  const edge = graph.outgoing.get(input.focusNodeId)!.find((e) => e.target === nodeId);
+  return edge ? traverse(graph, input, edge.id) : arrive(graph, input, nodeId, null, false, 'open');
 }
 function arrive(
   graph: GraphIndex,
@@ -245,7 +304,7 @@ export function restoreView(graph: GraphIndex, input: unknown): CloudFlowViewSta
     const b = record(value, `breadcrumbs.${id}`);
     if (b.id !== id || !graph.nodes.has(b.currentNodeId as string))
       throw new Error(`breadcrumbs.${id}: invalid identity or missing node`);
-    if (typeof b.reverse !== 'boolean' || !['start', 'search', 'traverse'].includes(b.arrival as string))
+    if (typeof b.reverse !== 'boolean' || !['start', 'search', 'traverse', 'open'].includes(b.arrival as string))
       throw new Error(`breadcrumbs.${id}: invalid arrival`);
     if (
       !Array.isArray(b.childBreadcrumbIds) ||
@@ -281,8 +340,8 @@ export function restoreView(graph: GraphIndex, input: unknown): CloudFlowViewSta
           (b.reverse ? edge.source : edge.target) !== b.currentNodeId
         )
           throw new Error(`breadcrumbs.${b.id}: arrival edge does not connect route`);
-      } else if (b.arrival !== 'search' || b.incomingEdgeId !== null)
-        throw new Error(`breadcrumbs.${b.id}: invalid search arrival`);
+      } else if (!['search', 'open'].includes(b.arrival) || b.incomingEdgeId !== null)
+        throw new Error(`breadcrumbs.${b.id}: invalid unlinked arrival`);
     }
     for (const childId of b.childBreadcrumbIds)
       if (state.breadcrumbs[childId].previousBreadcrumbId !== b.id)
