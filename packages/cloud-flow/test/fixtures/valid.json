@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "nodes": [
+    { "id": "a", "type": "capability", "label": "Capability A" },
+    { "id": "b", "type": "component", "label": "Shared B" }
+  ],
+  "edges": [
+    { "id": "a-b", "source": "a", "target": "b", "type": "uses", "status": "proposed" },
+    { "id": "b-a", "source": "b", "target": "a", "type": "related_to", "status": "proposed" }
+  ]
+}

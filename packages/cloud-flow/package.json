@@ -1,0 +1,43 @@
+{
+  "name": "@100monkeys/cloud-flow",
+  "version": "0.1.0",
+  "description": "Persistent recursive breadcrumb stacks for exploring capability graphs",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && node -e \"require('fs').copyFileSync('src/style.css','dist/style.css')\"",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "lint": "eslint src test --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@xyflow/react": "workspace:^"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.6",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "@xyflow/eslint-config": "workspace:*",
+    "eslint": "8.57.0",
+    "tsx": "^4.20.0",
+    "typescript": "5.4.5"
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "schemaVersion": "1.0",
+  "nodes": [
+    {
+      "id": "grail",
+      "type": "architecture",
+      "label": "gr{Ai}Γ Coherence Architecture and Engine",
+      "description": "Overarching architecture for coherence across information, identity, relationships, decisions, and transformations.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · Product Overview; §15"]
+    },
+    {
+      "id": "redsigma",
+      "type": "architecture",
+      "label": "REDΣ",
+      "description": "Distributed Agentic Structured Resolution Architecture: the integrated technical foundation of gr{Ai}Γ.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1; §15"]
+    },
+    {
+      "id": "parsing",
+      "type": "capability",
+      "label": "REDΣ Parsing Engine",
+      "description": "Interprets structured information, identities, boundaries, relationships, conditions, and transformations.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.1"]
+    },
+    {
+      "id": "math-library",
+      "type": "capability",
+      "label": "REDΣ Transformation Math Library",
+      "description": "Set calculus, constraints, state transformations, composition, and forward and reverse validation.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.2"]
+    },
+    {
+      "id": "agents",
+      "type": "capability",
+      "label": "REDΣ Distributed Agent-Facilitated Architecture",
+      "description": "Coordinates agents, resolvers, tools, and execution environments around structured tasks.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.3"]
+    },
+    {
+      "id": "resolution",
+      "type": "capability",
+      "label": "REDΣ Coherence and Resolution Engine",
+      "description": "Evaluates coherence, structured states, relationships, and proposed changes against governing conditions. Advanced automated coherence measurement remains in development.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.4"]
+    },
+    {
+      "id": "language-parser",
+      "type": "component",
+      "label": "Language Parser",
+      "description": "Parses input and supports consistent output formatting. Kept separate from REDΣ Parsing Engine pending verified identity mapping.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 1"]
+    },
+    {
+      "id": "transformation-math",
+      "type": "component",
+      "label": "Transformation Math",
+      "description": "Portfolio record describing weights for an open-weight model; not merged with the later math library record.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 2"]
+    },
+    {
+      "id": "causal-reality",
+      "type": "application",
+      "label": "Causal Reality Analyzer",
+      "description": "Portfolio capability for analysis of bulk data.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 3"]
+    },
+    {
+      "id": "resolver",
+      "type": "component",
+      "label": "gr{Ai}Γ Resolver System",
+      "description": "Resolution engine portfolio record; exact mapping to the October architecture remains unverified.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 4"]
+    },
+    {
+      "id": "conflict",
+      "type": "component",
+      "label": "Conflict and Paradox Resolution Engine",
+      "description": "Handles conflicts between transformation routes.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 5"]
+    },
+    {
+      "id": "cartography",
+      "type": "component",
+      "label": "Cartography Engine",
+      "description": "Provides transformation routes for a requested resolution.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 6"]
+    },
+    {
+      "id": "prism",
+      "type": "application",
+      "label": "Prism Portal",
+      "description": "Portal platform; described in October as an open-source, cloud-accessible platform with local control of information.",
+      "sourceRefs": [
+        "100_Monkeys_Current_Capabilities.docx · August 2026 · item 7",
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §4; §15"
+      ]
+    },
+    {
+      "id": "workspace",
+      "type": "application",
+      "label": "Resolution Workspace",
+      "description": "Private workspace for working through a problem before exposing a user-facing result.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 8"]
+    },
+    {
+      "id": "steward",
+      "type": "application",
+      "label": "Steward Advanced Wiki Curator",
+      "description": "Distributed wiki with branching, progressive resolution, and submission curation.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 9"]
+    },
+    {
+      "id": "identity",
+      "type": "component",
+      "label": "Core Identity Resolver and PII Protection System",
+      "description": "Provides the specific identity context required for an interaction.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 10"]
+    },
+    {
+      "id": "artur",
+      "type": "governance",
+      "label": "ARTUR Challenge Layer",
+      "description": "Examines requested items for conflicts with governance patterns.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 11"]
+    },
+    {
+      "id": "transform-library",
+      "type": "component",
+      "label": "REDΣ Transformation Library",
+      "description": "Portfolio record of core transformation programs; retained independently from the transformation math library.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 12"]
+    },
+    {
+      "id": "encryption",
+      "type": "component",
+      "label": "Next-Gen Distributed Encryption Process",
+      "description": "Multi-service encryption design whose complete integration is described as unfinished.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 13"]
+    },
+    {
+      "id": "token",
+      "type": "governance",
+      "label": "REDΣ Token Governance Stack",
+      "description": "Token governance development aimed at AI action observability and traceability.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 14"]
+    },
+    {
+      "id": "tutor",
+      "type": "application",
+      "label": "Homeschool Tutor App",
+      "description": "AI tutoring application developed with a homeschool parent.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 15"]
+    },
+    {
+      "id": "core-research",
+      "type": "research",
+      "label": "Core Research Group — General Architecture Research",
+      "description": "Research and documentation of a general architecture type.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 16"]
+    },
+    {
+      "id": "legal",
+      "type": "application",
+      "label": "Legal Research and Case Development System",
+      "description": "Concept for legal research and case development.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 17"]
+    },
+    {
+      "id": "howie",
+      "type": "application",
+      "label": "HOWIE Transformation Engine",
+      "description": "Business and property transformation toward a service-based foundation.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 18"]
+    },
+    {
+      "id": "events",
+      "type": "research",
+      "label": "Dynamic Event Engine research",
+      "description": "Event-driven resolution, temporal relationships, workflows, and recovery.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §12"]
+    },
+    {
+      "id": "adaptive",
+      "type": "research",
+      "label": "Adaptive Computing and Operating Systems research",
+      "description": "Research into adaptive resources, hardware interfaces, and heterogeneous computing.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §13"]
+    },
+    {
+      "id": "veda",
+      "type": "research",
+      "label": "Veda OS and heterogeneous computing",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §13"]
+    },
+    {
+      "id": "history",
+      "type": "research",
+      "label": "Historical knowledge recovery",
+      "description": "Studies historical structured reasoning while distinguishing documented knowledge from reconstruction.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §11"]
+    },
+    {
+      "id": "intelligence",
+      "type": "research",
+      "label": "Structured machine intelligence",
+      "description": "Investigates structured relationships and transformations as learning inputs.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §9"]
+    },
+    {
+      "id": "integration",
+      "type": "research",
+      "label": "Advanced integration and cross-system context portability",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §14"]
+    }
+  ],
+  "edges": [
+    {
+      "id": "grail-redsigma",
+      "source": "grail",
+      "target": "redsigma",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §15"]
+    },
+    {
+      "id": "redsigma-parsing",
+      "source": "redsigma",
+      "target": "parsing",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §1.1; §15"]
+    },
+    {
+      "id": "redsigma-math",
+      "source": "redsigma",
+      "target": "math-library",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §1.2; §15"]
+    },
+    {
+      "id": "redsigma-agents",
+      "source": "redsigma",
+      "target": "agents",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §1.3; §15"]
+    },
+    {
+      "id": "redsigma-resolution",
+      "source": "redsigma",
+      "target": "resolution",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §1.4; §15"]
+    },
+    {
+      "id": "grail-prism",
+      "source": "grail",
+      "target": "prism",
+      "type": "uses",
+      "status": "documented",
+      "contribution": "Listed as a supporting technology; this is not an assertion of a technical runtime dependency.",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §15"]
+    },
+    {
+      "id": "grail-events",
+      "source": "grail",
+      "target": "events",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §12; §15"]
+    },
+    {
+      "id": "grail-adaptive",
+      "source": "grail",
+      "target": "adaptive",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §13; §15"]
+    },
+    {
+      "id": "adaptive-veda",
+      "source": "adaptive",
+      "target": "veda",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §13"]
+    },
+    {
+      "id": "grail-history",
+      "source": "grail",
+      "target": "history",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §11; §15"]
+    },
+    {
+      "id": "grail-intelligence",
+      "source": "grail",
+      "target": "intelligence",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §9; §15"]
+    },
+    {
+      "id": "grail-integration",
+      "source": "grail",
+      "target": "integration",
+      "type": "contains",
+      "status": "documented",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · §14; §15"]
+    },
+    {
+      "id": "parsing-language",
+      "source": "parsing",
+      "target": "language-parser",
+      "type": "related_to",
+      "status": "proposed",
+      "contribution": "Demonstration mapping between separately documented records; identity and implementation relationship require verification."
+    },
+    {
+      "id": "language-resolution",
+      "source": "language-parser",
+      "target": "resolution",
+      "type": "contributes_to",
+      "status": "proposed",
+      "contribution": "Illustrates a shared component. Exact contribution is not established."
+    },
+    {
+      "id": "resolution-parsing",
+      "source": "resolution",
+      "target": "parsing",
+      "type": "uses",
+      "status": "proposed",
+      "contribution": "Demonstration cycle, not an asserted runtime dependency."
+    },
+    {
+      "id": "math-transform",
+      "source": "math-library",
+      "target": "transformation-math",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "math-programs",
+      "source": "math-library",
+      "target": "transform-library",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-resolver",
+      "source": "resolution",
+      "target": "resolver",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-conflict",
+      "source": "resolution",
+      "target": "conflict",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-causal",
+      "source": "resolution",
+      "target": "causal-reality",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-cartography",
+      "source": "resolution",
+      "target": "cartography",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-workspace",
+      "source": "resolution",
+      "target": "workspace",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    {
+      "id": "resolution-identity",
+      "source": "resolution",
+      "target": "identity",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    { "id": "agents-artur", "source": "agents", "target": "artur", "type": "related_to", "status": "proposed" },
+    { "id": "agents-token", "source": "agents", "target": "token", "type": "related_to", "status": "proposed" },
+    {
+      "id": "agents-encryption",
+      "source": "agents",
+      "target": "encryption",
+      "type": "related_to",
+      "status": "proposed"
+    },
+    { "id": "prism-steward", "source": "prism", "target": "steward", "type": "related_to", "status": "proposed" },
+    {
+      "id": "prism-research",
+      "source": "core-research",
+      "target": "prism",
+      "type": "uses",
+      "status": "documented",
+      "contribution": "August record names Prism Portal as a planned sharing channel for research information.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · item 16"]
+    },
+    {
+      "id": "research-causal",
+      "source": "core-research",
+      "target": "causal-reality",
+      "type": "uses",
+      "status": "documented",
+      "contribution": "August record names Causal Reality Analyzer as a planned sharing channel.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · item 16"]
+    },
+    { "id": "grail-tutor", "source": "grail", "target": "tutor", "type": "related_to", "status": "proposed" },
+    { "id": "grail-legal", "source": "grail", "target": "legal", "type": "related_to", "status": "proposed" },
+    { "id": "grail-howie", "source": "grail", "target": "howie", "type": "related_to", "status": "proposed" }
+  ]
+}
