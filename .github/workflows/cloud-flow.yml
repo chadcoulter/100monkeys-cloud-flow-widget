@@ -1,0 +1,24 @@
+name: Cloud Flow
+on:
+  push:
+    branches: [main, feature/cloud-flow]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24.16.0'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile --filter @100monkeys/cloud-flow... --filter cloud-flow-demo...
+      - run: pnpm build:cloud
+      - run: pnpm check:cloud
+      - run: pnpm format:cloud:check
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:cloud

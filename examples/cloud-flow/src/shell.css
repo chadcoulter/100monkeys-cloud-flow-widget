@@ -1,0 +1,174 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  background: #111f29;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.demo-document-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  color: #a3b8c0;
+  font:
+    9px 'Segoe UI',
+    sans-serif;
+  letter-spacing: 1.3px;
+  background: #0c171e;
+}
+.demo-document-bar > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.demo-version {
+  color: #78928d;
+  margin-left: 10px;
+}
+.demo-document-bar a {
+  color: #b9d2cb;
+  text-decoration: none;
+}
+.demo-document-bar button,
+.demo-upload {
+  background: transparent;
+  color: #d8e7e1;
+  border: 1px solid #3a5058;
+  border-radius: 4px;
+  padding: 5px 9px;
+  font:
+    10px 'Segoe UI',
+    sans-serif;
+  letter-spacing: 0;
+  cursor: pointer;
+  position: relative;
+}
+.demo-upload input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.demo-upload:focus-within {
+  outline: 3px solid #d58a26;
+}
+.demo-error {
+  background: #fff0dc;
+  color: #633607;
+  padding: 12px;
+  font: 13px sans-serif;
+}
+#root > .cf-explorer {
+  flex: 1;
+  min-height: 0;
+}
+@media (max-width: 1000px) {
+  #root {
+    height: auto;
+  }
+  #root > .cf-explorer {
+    min-height: 100vh;
+  }
+  .demo-document-bar {
+    padding: 8px;
+    letter-spacing: 0;
+    flex-wrap: wrap;
+  }
+}
+.demo-json-backdrop {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #16261db3;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.demo-json-editor {
+  display: flex;
+  flex-direction: column;
+  width: min(900px, 95vw);
+  height: min(750px, 90vh);
+  background: #fcfcf7;
+  border-radius: 12px;
+  box-shadow: 0 20px 80px #0005;
+  padding: 24px;
+  font:
+    13px 'Segoe UI',
+    sans-serif;
+  color: #344437;
+}
+.demo-json-editor > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.demo-json-editor h2 {
+  font:
+    25px Georgia,
+    serif;
+  margin: 0;
+}
+.demo-json-editor > p {
+  color: #7a8775;
+}
+.demo-json-editor > label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  color: #7a8775;
+  min-height: 0;
+}
+.demo-json-editor textarea {
+  flex: 1;
+  resize: none;
+  margin: 8px 0 15px;
+  padding: 16px;
+  border: 1px solid #ccd6c3;
+  border-radius: 6px;
+  background: #f4f6ee;
+  font:
+    12px/1.6 Consolas,
+    monospace;
+  color: #314638;
+}
+.demo-json-editor button {
+  padding: 9px 14px;
+  border: 1px solid #bac9ae;
+  border-radius: 5px;
+  background: #edf2e6;
+  color: #345339;
+  cursor: pointer;
+}
+.demo-json-editor > footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.demo-json-editor > footer button {
+  background: #396d58;
+  color: white;
+  border: 0;
+}
+.demo-json-editor [role='alert'] {
+  color: #a34327;
+}
+#root > .wiki-reader {
+  flex: 1;
+  min-height: 650px;
+}
