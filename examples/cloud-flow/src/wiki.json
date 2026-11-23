@@ -19,56 +19,70 @@
       "title": "REDΣ",
       "summary": "Distributed Agentic Structured Resolution Architecture.",
       "content": "**Distributed Agentic Structured Resolution Architecture** is the integrated technical system at the heart of gr{Ai}Γ.\n\n## Four connected capabilities\n- [[parsing|Parsing Engine]]: interprets identity, meaning, relationships, conditions, boundaries, and transformations.\n- [[math|Transformation Math Library]]: represents, evaluates, and validates structured transformations.\n- [[agents|Distributed Agent-Facilitated Architecture]]: coordinates agents, resolvers, tools, and execution environments.\n- [[resolution|Coherence and Resolution Engine]]: evaluates states and relationships against governing conditions.\n\nThe components remain individually addressable within the broader [[home|100 Monkeys architecture]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1; §15"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1; §15"
+      ]
     },
     {
       "id": "parsing",
       "title": "Parsing Engine",
       "summary": "Interpreting identity, boundaries, and relationships in structured information.",
       "content": "The REDΣ Parsing Engine processes structured information to identify identity, meaning, relationships, conditions, boundaries, and transformations.\n\n## Interpretation\n- Character, symbol, and structured information parsing.\n- Identification of relationships and ordered structures.\n- Set membership and boundary recognition.\n- Conditional and relational analysis.\n\n## Preserving context\nThe source describes forward and reverse parsing, ambiguity and contradiction identification, preservation of alternative interpretations, and traceability from source information to derived representations.\n\nThe [[language-parser|Language Parser]] is a separate portfolio record. Its exact identity relationship to this engine has not been verified.\n\nReturn to [[redsigma|REDΣ]] or continue into [[math|Transformation Math]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.1"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.1"
+      ]
     },
     {
       "id": "language-parser",
       "title": "Language Parser",
       "summary": "An August portfolio record for parsing and consistent formatting.",
       "content": "The August 2026 capability inventory describes the Language Parser as a capability that parses input and ensures output is formatted properly and consistently.\n\n## Source identity\nThis is an individual source record. It is kept separate from the later [[parsing|REDΣ Parsing Engine]] until the exact relationship is established.\n\nBoth records can be read within [[redsigma|REDΣ]] and the broader [[home|100 Monkeys]] wiki without duplicating this page's identity.\n\n## Mapping status\nA cross-reference helps readers compare the descriptions. It does not establish that the two names identify the same implementation.",
-      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 1"]
+      "sourceRefs": [
+        "100_Monkeys_Current_Capabilities.docx · August 2026 · item 1"
+      ]
     },
     {
       "id": "math",
       "title": "Transformation Math",
       "summary": "Set calculus, conditions, state transformations, and validation.",
       "content": "The REDΣ Transformation Math Library provides mathematical and logical operations for representing, evaluating, and validating structured transformations.\n\n## Operations\n- Set definition, membership, and relationships.\n- Boundary and constraint evaluation.\n- State representation and transformation.\n- Transformation operators and composition.\n- Forward and reverse validation.\n\nThe source also describes invariant preservation, conditional transformations, and relationship reconciliation.\n\nThis capability is one of the four components of [[redsigma|REDΣ]]. Read alongside the [[parsing|Parsing Engine]] and [[resolution|Coherence and Resolution Engine]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.2"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.2"
+      ]
     },
     {
       "id": "resolution",
       "title": "Coherence & Resolution",
       "summary": "Evaluating structured states and reconciling relationships.",
       "content": "The Coherence and Resolution Engine evaluates structured states and relationships to support coherent outcomes.\n\n## Resolution work\nThe capability description includes identity and relationship preservation; conflict, ambiguity, intent, and priority reconciliation; constraint validation; and preservation of unresolved alternatives.\n\n## Traceability\nTransformation verification and resolution traceability connect proposed changes to their governing conditions.\n\nAdvanced automated coherence measurement and deterministic resolution remain areas of continuing development.\n\nRelated reading: [[parsing|Parsing Engine]], [[math|Transformation Math]], and the [[redsigma|REDΣ architecture]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.4"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.4"
+      ]
     },
     {
       "id": "agents",
       "title": "Distributed Coordination",
       "summary": "Agents, resolvers, tools, and execution environments around shared conditions.",
       "content": "The Distributed Agent-Facilitated Architecture coordinates agents, resolvers, tools, and execution environments around structured tasks and shared resolution conditions.\n\n## Coordination\n- Intent and priority handling.\n- Task decomposition and execution.\n- Structured communication and conditional execution.\n- Integration with external tools and services.\n\nThe source emphasizes preservation of context across operations, human-governed decisions, and traceable execution.\n\nReturn to [[redsigma|REDΣ]] or read about [[resolution|coherence and resolution]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.3"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.3"
+      ]
     },
     {
       "id": "research",
-      "title": "Research Notes",
-      "summary": "Structured learning, historical knowledge, and adaptive computing.",
-      "content": "The October capability document distinguishes research and experimental work from existing foundations and active integration.\n\n## Areas of inquiry\n- Structured machine intelligence and learning from relationships.\n- [[history|Historical knowledge recovery]].\n- Advanced language and symbolic parsing.\n- Dynamic event systems and temporal relationships.\n- Adaptive computing, Veda OS, and heterogeneous hardware.\n- Cross-system context portability and identity preservation.\n\nThese are research areas, not claims of completed implementations.\n\nRelated pages: [[parsing|Parsing Engine]], [[prism|Prism Portal]], and [[home|100 Monkeys]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §8–14; §16"]
+      "title": "Research",
+      "summary": "Symmetric Encryption: available cryptographic technology, business use cases, and technical advantages.",
+      "content": "## Symmetric Encryption\n**Efficient cryptographic protection for business systems.**\n\nWe have symmetric attestation technology for authenticating trusted systems and verifying information integrity. Symmetric encryption enables efficient protection of sensitive data.\n\n## What it can do\n- Authenticate APIs, connected devices, internal services, and automated messages.\n- Verify transactions, software artifacts, and business data against tampering.\n- Protect large datasets using efficient symmetric encryption methods.\n- Support high-volume operations with lower cryptographic processing overhead.\n\n[[symmetric-encryption|Open Symmetric Encryption research]] to explore the technology, all twelve business applications, how it works, comparisons, and documented implementation capabilities.\n\n**Want to see it in action? Ask us to demonstrate it.**",
+      "sourceRefs": []
     },
     {
       "id": "history",
       "title": "Historical Knowledge",
       "summary": "Recovering structured relationships from historical sources.",
       "content": "Historical knowledge recovery studies the development, preservation, transformation, and transmission of structured and ordered thinking across ancient and medieval civilizations.\n\n## Evidence and interpretation\nThe work examines texts, inscriptions, manuscripts, and technical records for relationships, classifications, procedures, sequences, and conditions. Source provenance is preserved.\n\nThe research distinguishes documented knowledge from reconstructed interpretations and does not assume ancient practitioners used modern mathematical formulations.\n\nThis inquiry is collected under [[research|Research Notes]] and relates to [[parsing|structured parsing]].",
-      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §11"]
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §11"
+      ]
     },
     {
       "id": "prism",
@@ -79,6 +93,48 @@
         "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §4",
         "100_Monkeys_Current_Capabilities.docx · August 2026 · items 7, 16"
       ]
+    },
+    {
+      "id": "symmetric-encryption",
+      "title": "Symmetric Encryption",
+      "summary": "Technology, twelve commercial use cases, efficiency advantages, and available attestation capabilities.",
+      "content": "**Faster authentication. Lower processing costs. Verifiable information integrity.**\n\nSymmetric cryptography uses a shared secret key to authenticate messages or encrypt data. It is particularly efficient for repeated transactions between trusted systems.\n\n## Explore the technology\n- [[symmetric-overview|What We Have]]\n- [[symmetric-how-it-works|How It Works]]\n- [[symmetric-applications|12 Business Applications]]\n- [[symmetric-benefits|Business Value]]\n- [[symmetric-comparison|Symmetric vs. Asymmetric]]\n- [[symmetric-capabilities|Implemented Capabilities]]\n\n**Ask us to demonstrate how this technology can work for your business.**\n\nReturn to [[research|Research]]."
+    },
+    {
+      "id": "symmetric-overview",
+      "title": "What We Have",
+      "summary": "Symmetric cryptography secures information with shared secret keys. It supports high-volume message authentication, integrity verification, and efficient bulk encryption.",
+      "content": "**Symmetric cryptography secures information with shared secret keys. It supports high-volume message authentication, integrity verification, and efficient bulk encryption.**\n\n## What We Have\n- HMAC-SHA256 authenticates messages and identity-bound tokens.\n- Authenticated encryption such as AES-GCM protects stored and transmitted data.\n- Nonce tracking and key rotation provide credential lifecycle controls.\n\n## More research\n- [[symmetric-how-it-works|How It Works]]\n- [[symmetric-capabilities|Implemented Capabilities]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
+    },
+    {
+      "id": "symmetric-how-it-works",
+      "title": "How It Works",
+      "summary": "Trusted systems establish a shared key. The sender creates an authentication tag for a message; the receiver checks the tag using that same key.",
+      "content": "**Trusted systems establish a shared key. The sender creates an authentication tag for a message; the receiver checks the tag using that same key.**\n\n## How It Works\n- The message and authenticated fields are bound together.\n- Unauthorized modifications cause authentication failure.\n- A unique nonce can make an authentication token single-use.\n\n## More research\n- [[symmetric-overview|What We Have]]\n- [[symmetric-comparison|Symmetric vs. Asymmetric]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
+    },
+    {
+      "id": "symmetric-applications",
+      "title": "Business Applications",
+      "summary": "The same efficient cryptographic operations support diverse business systems.",
+      "content": "**The same efficient cryptographic operations support diverse business systems.**\n\n## Business Applications\n- API and service-to-service authentication\n- Financial transaction and payment-message integrity\n- CI/CD artifact and deployment verification\n- Healthcare record protection\n- Cloud infrastructure and microservices\n- IoT and connected device security\n- Enterprise storage and backups\n- Identity and access management\n- E-commerce transactions\n- Industrial automation commands\n- Business-to-business data exchange\n- AI services and automated workflows\n\n## More research\n- [[symmetric-benefits|Business Value]]\n- [[symmetric-comparison|Symmetric vs. Asymmetric]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
+    },
+    {
+      "id": "symmetric-benefits",
+      "title": "Business Value",
+      "summary": "Efficient verification and data protection help businesses secure more operations with less processing overhead.",
+      "content": "**Efficient verification and data protection help businesses secure more operations with less processing overhead.**\n\n## Business Value\n- Lower per-operation CPU requirements\n- High-volume authentication and transaction throughput\n- Faster verification in trusted service environments\n- Reduced hardware and energy requirements on constrained devices\n- Tamper detection for messages and business records\n\n## More research\n- [[symmetric-applications|Business Applications]]\n- [[symmetric-comparison|Symmetric vs. Asymmetric]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
+    },
+    {
+      "id": "symmetric-comparison",
+      "title": "Symmetric vs. Asymmetric",
+      "summary": "Symmetric cryptography is especially efficient for repeated operations between systems that already share a trusted key.",
+      "content": "**Symmetric cryptography is especially efficient for repeated operations between systems that already share a trusted key.**\n\n## Symmetric vs. Asymmetric\n- HMAC verification is computationally lightweight compared with public-key signature verification.\n- Symmetric encryption is the practical method for protecting large amounts of data.\n- Asymmetric cryptography supports public verification and establishing keys between parties without a prior shared secret.\n- Many real-world systems combine asymmetric key establishment with symmetric data protection.\n\n## More research\n- [[symmetric-how-it-works|How It Works]]\n- [[symmetric-benefits|Business Value]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
+    },
+    {
+      "id": "symmetric-capabilities",
+      "title": "Implemented Capabilities",
+      "summary": "The documented symmetric-attestation implementation provides a concrete example of business-ready authentication mechanisms.",
+      "content": "**The documented symmetric-attestation implementation provides a concrete example of business-ready authentication mechanisms.**\n\n## Implemented Capabilities\n- HMAC-SHA256 authentication with 256-bit secret keys\n- Length-prefixed, identity-bound tokens\n- 96-bit nonces and replay rejection\n- Constant-time authentication-tag comparison\n- Key rotation invalidating outstanding tokens\n- Configurable verifier interface\n\n## More research\n- [[symmetric-overview|What We Have]]\n- [[symmetric-applications|Business Applications]]\n\n[[symmetric-encryption|Symmetric Encryption]] · [[research|Research]]\n\n**Ask us to demonstrate it.**"
     }
   ],
   "stacks": [
@@ -88,7 +144,14 @@
       "anchorPageId": "home",
       "orientation": "horizontal",
       "side": "right",
-      "members": [{ "pageId": "redsigma" }, { "stackId": "home-engines" }]
+      "members": [
+        {
+          "pageId": "redsigma"
+        },
+        {
+          "stackId": "home-engines"
+        }
+      ]
     },
     {
       "id": "home-engines",
@@ -96,7 +159,17 @@
       "anchorPageId": "home",
       "orientation": "vertical",
       "side": "right",
-      "members": [{ "pageId": "parsing" }, { "pageId": "math" }, { "pageId": "resolution" }]
+      "members": [
+        {
+          "pageId": "parsing"
+        },
+        {
+          "pageId": "math"
+        },
+        {
+          "pageId": "resolution"
+        }
+      ]
     },
     {
       "id": "home-research",
@@ -104,7 +177,17 @@
       "anchorPageId": "home",
       "orientation": "horizontal",
       "side": "bottom",
-      "members": [{ "pageId": "prism" }, { "pageId": "research" }, { "pageId": "history" }]
+      "members": [
+        {
+          "pageId": "prism"
+        },
+        {
+          "pageId": "research"
+        },
+        {
+          "pageId": "history"
+        }
+      ]
     },
     {
       "id": "redsigma-engines",
@@ -112,7 +195,14 @@
       "anchorPageId": "redsigma",
       "orientation": "vertical",
       "side": "right",
-      "members": [{ "stackId": "interpretation" }, { "stackId": "execution" }]
+      "members": [
+        {
+          "stackId": "interpretation"
+        },
+        {
+          "stackId": "execution"
+        }
+      ]
     },
     {
       "id": "interpretation",
@@ -120,7 +210,14 @@
       "anchorPageId": "redsigma",
       "orientation": "horizontal",
       "side": "right",
-      "members": [{ "pageId": "parsing" }, { "pageId": "math" }]
+      "members": [
+        {
+          "pageId": "parsing"
+        },
+        {
+          "pageId": "math"
+        }
+      ]
     },
     {
       "id": "execution",
@@ -128,7 +225,14 @@
       "anchorPageId": "redsigma",
       "orientation": "horizontal",
       "side": "right",
-      "members": [{ "pageId": "agents" }, { "pageId": "resolution" }]
+      "members": [
+        {
+          "pageId": "agents"
+        },
+        {
+          "pageId": "resolution"
+        }
+      ]
     },
     {
       "id": "parser-reading",
@@ -136,15 +240,86 @@
       "anchorPageId": "parsing",
       "orientation": "vertical",
       "side": "right",
-      "members": [{ "pageId": "language-parser" }, { "pageId": "math" }]
+      "members": [
+        {
+          "pageId": "language-parser"
+        },
+        {
+          "pageId": "math"
+        }
+      ]
     },
     {
       "id": "research-reading",
-      "title": "Research reading stack",
+      "title": "Symmetric Encryption research",
       "anchorPageId": "research",
       "orientation": "horizontal",
       "side": "right",
-      "members": [{ "pageId": "history" }, { "pageId": "parsing" }]
+      "members": [
+        {
+          "pageId": "symmetric-encryption"
+        },
+        {
+          "stackId": "symmetric-research-topics"
+        }
+      ]
+    },
+    {
+      "id": "symmetric-research-topics",
+      "title": "Explore the technology",
+      "anchorPageId": "research",
+      "orientation": "vertical",
+      "side": "right",
+      "members": [
+        {
+          "pageId": "symmetric-applications"
+        },
+        {
+          "pageId": "symmetric-comparison"
+        },
+        {
+          "pageId": "symmetric-capabilities"
+        }
+      ]
+    },
+    {
+      "id": "symmetric-encryption-branches",
+      "title": "Symmetric Encryption — explore",
+      "anchorPageId": "symmetric-encryption",
+      "orientation": "horizontal",
+      "side": "right",
+      "members": [
+        {
+          "pageId": "symmetric-overview"
+        },
+        {
+          "pageId": "symmetric-applications"
+        },
+        {
+          "stackId": "symmetric-encryption-more"
+        }
+      ]
+    },
+    {
+      "id": "symmetric-encryption-more",
+      "title": "Technical research",
+      "anchorPageId": "symmetric-encryption",
+      "orientation": "vertical",
+      "side": "right",
+      "members": [
+        {
+          "pageId": "symmetric-how-it-works"
+        },
+        {
+          "pageId": "symmetric-comparison"
+        },
+        {
+          "pageId": "symmetric-capabilities"
+        },
+        {
+          "pageId": "symmetric-benefits"
+        }
+      ]
     }
   ]
 }
