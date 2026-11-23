@@ -128,7 +128,7 @@ export function ResearchBrowser() {
             )}
             <div className="research-contact">
               <div><strong>See this technology in action</strong><p>Ask us to demonstrate how it can support your business.</p></div>
-              <a href={`mailto:info@100monkeys.com?subject=${encodeURIComponent('Demonstration request: Symmetric Encryption' + (current ? ' / ' + current.title : ''))}`}>Request a demonstration ↗</a>
+              <span className="research-cta-label">Ask us to demonstrate it.</span>
             </div>
           </div>
         </section>
