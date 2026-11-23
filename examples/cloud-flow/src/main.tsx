@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ResearchBrowser } from './ResearchBrowser';
 import { createRoot } from 'react-dom/client';
 import { CloudFlow, parseDocument, type CloudFlowDocument } from '@100monkeys/cloud-flow';
 import '@xyflow/react/dist/style.css';
@@ -8,6 +9,12 @@ import wiki from './wiki.json';
 import './shell.css';
 
 function Demo() {
+  const mode = new URLSearchParams(window.location.search).get('demo');
+  if (mode === 'research') return <ResearchBrowser />;
+  return <WikiDemo />;
+}
+
+function WikiDemo() {
   const legacy = new URLSearchParams(window.location.search).get('demo') === 'graph';
   const [source, setSource] = useState<unknown>(() => (legacy ? document : wiki));
   const [content, setContent] = useState<CloudFlowDocument>(() => parseDocument(source));
