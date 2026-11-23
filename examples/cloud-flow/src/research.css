@@ -68,3 +68,5 @@
  .research-contact a { display:inline-block; }
 }
 @media(max-width:390px) { .research-card-grid { grid-template-columns:minmax(0,1fr); } }
+
+.research-cta-label { display:inline-block; color:#102720; background:#a7dbc7; font-weight:700; font-size:12px; padding:12px; border-radius:7px; }
