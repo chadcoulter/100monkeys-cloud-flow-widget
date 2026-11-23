@@ -1,0 +1,150 @@
+{
+  "format": "wiki-stacks",
+  "schemaVersion": "1.0",
+  "title": "100 Monkeys knowledge wiki",
+  "startPageId": "home",
+  "pages": [
+    {
+      "id": "home",
+      "title": "100 Monkeys",
+      "summary": "Coherence, structured information, and connected capabilities.",
+      "content": "100 Monkeys develops resolution, transformation, governance, identity, research, and applied AI systems.\n\n## Coherence architecture\ngr{Ai}Γ brings together technologies for establishing, evaluating, preserving, reconciling, and restoring coherence across information, identity, relationships, and decisions.\n\nIts technical foundation is [[redsigma|REDΣ]], an integrated architecture with parsing, transformation mathematics, distributed coordination, and resolution capabilities.\n\n## Connected knowledge\nThe architecture connects [[parsing|structured interpretation]], [[math|transformation mathematics]], and [[resolution|coherence and resolution]]. These pages describe the capabilities separately while preserving their connections.\n\nSupporting applications include [[prism|Prism Portal]]. Active areas of inquiry are collected in [[research|Research notes]].",
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · Product Overview; §15",
+        "100_Monkeys_Current_Capabilities.docx · August 2026 · introduction"
+      ]
+    },
+    {
+      "id": "redsigma",
+      "title": "REDΣ",
+      "summary": "Distributed Agentic Structured Resolution Architecture.",
+      "content": "**Distributed Agentic Structured Resolution Architecture** is the integrated technical system at the heart of gr{Ai}Γ.\n\n## Four connected capabilities\n- [[parsing|Parsing Engine]]: interprets identity, meaning, relationships, conditions, boundaries, and transformations.\n- [[math|Transformation Math Library]]: represents, evaluates, and validates structured transformations.\n- [[agents|Distributed Agent-Facilitated Architecture]]: coordinates agents, resolvers, tools, and execution environments.\n- [[resolution|Coherence and Resolution Engine]]: evaluates states and relationships against governing conditions.\n\nThe components remain individually addressable within the broader [[home|100 Monkeys architecture]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1; §15"]
+    },
+    {
+      "id": "parsing",
+      "title": "Parsing Engine",
+      "summary": "Interpreting identity, boundaries, and relationships in structured information.",
+      "content": "The REDΣ Parsing Engine processes structured information to identify identity, meaning, relationships, conditions, boundaries, and transformations.\n\n## Interpretation\n- Character, symbol, and structured information parsing.\n- Identification of relationships and ordered structures.\n- Set membership and boundary recognition.\n- Conditional and relational analysis.\n\n## Preserving context\nThe source describes forward and reverse parsing, ambiguity and contradiction identification, preservation of alternative interpretations, and traceability from source information to derived representations.\n\nThe [[language-parser|Language Parser]] is a separate portfolio record. Its exact identity relationship to this engine has not been verified.\n\nReturn to [[redsigma|REDΣ]] or continue into [[math|Transformation Math]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.1"]
+    },
+    {
+      "id": "language-parser",
+      "title": "Language Parser",
+      "summary": "An August portfolio record for parsing and consistent formatting.",
+      "content": "The August 2026 capability inventory describes the Language Parser as a capability that parses input and ensures output is formatted properly and consistently.\n\n## Source identity\nThis is an individual source record. It is kept separate from the later [[parsing|REDΣ Parsing Engine]] until the exact relationship is established.\n\nBoth records can be read within [[redsigma|REDΣ]] and the broader [[home|100 Monkeys]] wiki without duplicating this page's identity.\n\n## Mapping status\nA cross-reference helps readers compare the descriptions. It does not establish that the two names identify the same implementation.",
+      "sourceRefs": ["100_Monkeys_Current_Capabilities.docx · August 2026 · item 1"]
+    },
+    {
+      "id": "math",
+      "title": "Transformation Math",
+      "summary": "Set calculus, conditions, state transformations, and validation.",
+      "content": "The REDΣ Transformation Math Library provides mathematical and logical operations for representing, evaluating, and validating structured transformations.\n\n## Operations\n- Set definition, membership, and relationships.\n- Boundary and constraint evaluation.\n- State representation and transformation.\n- Transformation operators and composition.\n- Forward and reverse validation.\n\nThe source also describes invariant preservation, conditional transformations, and relationship reconciliation.\n\nThis capability is one of the four components of [[redsigma|REDΣ]]. Read alongside the [[parsing|Parsing Engine]] and [[resolution|Coherence and Resolution Engine]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.2"]
+    },
+    {
+      "id": "resolution",
+      "title": "Coherence & Resolution",
+      "summary": "Evaluating structured states and reconciling relationships.",
+      "content": "The Coherence and Resolution Engine evaluates structured states and relationships to support coherent outcomes.\n\n## Resolution work\nThe capability description includes identity and relationship preservation; conflict, ambiguity, intent, and priority reconciliation; constraint validation; and preservation of unresolved alternatives.\n\n## Traceability\nTransformation verification and resolution traceability connect proposed changes to their governing conditions.\n\nAdvanced automated coherence measurement and deterministic resolution remain areas of continuing development.\n\nRelated reading: [[parsing|Parsing Engine]], [[math|Transformation Math]], and the [[redsigma|REDΣ architecture]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.4"]
+    },
+    {
+      "id": "agents",
+      "title": "Distributed Coordination",
+      "summary": "Agents, resolvers, tools, and execution environments around shared conditions.",
+      "content": "The Distributed Agent-Facilitated Architecture coordinates agents, resolvers, tools, and execution environments around structured tasks and shared resolution conditions.\n\n## Coordination\n- Intent and priority handling.\n- Task decomposition and execution.\n- Structured communication and conditional execution.\n- Integration with external tools and services.\n\nThe source emphasizes preservation of context across operations, human-governed decisions, and traceable execution.\n\nReturn to [[redsigma|REDΣ]] or read about [[resolution|coherence and resolution]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §1.3"]
+    },
+    {
+      "id": "research",
+      "title": "Research Notes",
+      "summary": "Structured learning, historical knowledge, and adaptive computing.",
+      "content": "The October capability document distinguishes research and experimental work from existing foundations and active integration.\n\n## Areas of inquiry\n- Structured machine intelligence and learning from relationships.\n- [[history|Historical knowledge recovery]].\n- Advanced language and symbolic parsing.\n- Dynamic event systems and temporal relationships.\n- Adaptive computing, Veda OS, and heterogeneous hardware.\n- Cross-system context portability and identity preservation.\n\nThese are research areas, not claims of completed implementations.\n\nRelated pages: [[parsing|Parsing Engine]], [[prism|Prism Portal]], and [[home|100 Monkeys]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §8–14; §16"]
+    },
+    {
+      "id": "history",
+      "title": "Historical Knowledge",
+      "summary": "Recovering structured relationships from historical sources.",
+      "content": "Historical knowledge recovery studies the development, preservation, transformation, and transmission of structured and ordered thinking across ancient and medieval civilizations.\n\n## Evidence and interpretation\nThe work examines texts, inscriptions, manuscripts, and technical records for relationships, classifications, procedures, sequences, and conditions. Source provenance is preserved.\n\nThe research distinguishes documented knowledge from reconstructed interpretations and does not assume ancient practitioners used modern mathematical formulations.\n\nThis inquiry is collected under [[research|Research Notes]] and relates to [[parsing|structured parsing]].",
+      "sourceRefs": ["GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §11"]
+    },
+    {
+      "id": "prism",
+      "title": "Prism Portal",
+      "summary": "A portal platform with cloud accessibility and local information control.",
+      "content": "Prism Portal is described in the October source as an existing open-source, cloud-accessible, AI-driven pocket social media platform.\n\n## Information and integration\nThe source lists locally hosted AI support, locally retained data, modular application integration, and API connectivity.\n\nThe August capability inventory also names Prism Portal as a planned channel for sharing information from the core architecture research group.\n\nRead more in [[research|Research Notes]] or return to [[home|100 Monkeys]].",
+      "sourceRefs": [
+        "GRAIL_RED_Sigma_Capabilities.docx · October 2026 · §4",
+        "100_Monkeys_Current_Capabilities.docx · August 2026 · items 7, 16"
+      ]
+    }
+  ],
+  "stacks": [
+    {
+      "id": "home-core",
+      "title": "Core architecture",
+      "anchorPageId": "home",
+      "orientation": "horizontal",
+      "side": "right",
+      "members": [{ "pageId": "redsigma" }, { "stackId": "home-engines" }]
+    },
+    {
+      "id": "home-engines",
+      "title": "Engine notes",
+      "anchorPageId": "home",
+      "orientation": "vertical",
+      "side": "right",
+      "members": [{ "pageId": "parsing" }, { "pageId": "math" }, { "pageId": "resolution" }]
+    },
+    {
+      "id": "home-research",
+      "title": "Applications & research",
+      "anchorPageId": "home",
+      "orientation": "horizontal",
+      "side": "bottom",
+      "members": [{ "pageId": "prism" }, { "pageId": "research" }, { "pageId": "history" }]
+    },
+    {
+      "id": "redsigma-engines",
+      "title": "REDΣ component notes",
+      "anchorPageId": "redsigma",
+      "orientation": "vertical",
+      "side": "right",
+      "members": [{ "stackId": "interpretation" }, { "stackId": "execution" }]
+    },
+    {
+      "id": "interpretation",
+      "title": "Interpretation & transformation",
+      "anchorPageId": "redsigma",
+      "orientation": "horizontal",
+      "side": "right",
+      "members": [{ "pageId": "parsing" }, { "pageId": "math" }]
+    },
+    {
+      "id": "execution",
+      "title": "Coordination & resolution",
+      "anchorPageId": "redsigma",
+      "orientation": "horizontal",
+      "side": "right",
+      "members": [{ "pageId": "agents" }, { "pageId": "resolution" }]
+    },
+    {
+      "id": "parser-reading",
+      "title": "Parser reading stack",
+      "anchorPageId": "parsing",
+      "orientation": "vertical",
+      "side": "right",
+      "members": [{ "pageId": "language-parser" }, { "pageId": "math" }]
+    },
+    {
+      "id": "research-reading",
+      "title": "Research reading stack",
+      "anchorPageId": "research",
+      "orientation": "horizontal",
+      "side": "right",
+      "members": [{ "pageId": "history" }, { "pageId": "parsing" }]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Symmetric Encryption",
+  "subtitle": "Research / Cryptography",
+  "summary": "Efficient encryption, authentication, and integrity verification for business systems.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "What we have",
+      "eyebrow": "Technology",
+      "intro": "Symmetric cryptography secures information with shared secret keys. It supports high-volume message authentication, integrity verification, and efficient bulk encryption.",
+      "points": [
+        "HMAC-SHA256 authenticates messages and identity-bound tokens.",
+        "Authenticated encryption such as AES-GCM protects stored and transmitted data.",
+        "Nonce tracking and key rotation provide credential lifecycle controls."
+      ],
+      "related": ["how-it-works", "capabilities"]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How it works",
+      "eyebrow": "Method",
+      "intro": "Trusted systems establish a shared key. The sender creates an authentication tag for a message; the receiver checks the tag using that same key.",
+      "points": [
+        "The message and authenticated fields are bound together.",
+        "Unauthorized modifications cause authentication failure.",
+        "A unique nonce can make an authentication token single-use."
+      ],
+      "related": ["overview", "comparison"]
+    },
+    {
+      "id": "applications",
+      "title": "Business applications",
+      "eyebrow": "Commercial uses",
+      "intro": "The same efficient cryptographic operations support diverse business systems.",
+      "points": [
+        "API and service-to-service authentication",
+        "Financial transaction and payment-message integrity",
+        "CI/CD artifact and deployment verification",
+        "Healthcare record protection",
+        "Cloud infrastructure and microservices",
+        "IoT and connected device security",
+        "Enterprise storage and backups",
+        "Identity and access management",
+        "E-commerce transactions",
+        "Industrial automation commands",
+        "Business-to-business data exchange",
+        "AI services and automated workflows"
+      ],
+      "related": ["benefits", "comparison"]
+    },
+    {
+      "id": "benefits",
+      "title": "Business value",
+      "eyebrow": "Commercial advantages",
+      "intro": "Efficient verification and data protection help businesses secure more operations with less processing overhead.",
+      "points": [
+        "Lower per-operation CPU requirements",
+        "High-volume authentication and transaction throughput",
+        "Faster verification in trusted service environments",
+        "Reduced hardware and energy requirements on constrained devices",
+        "Tamper detection for messages and business records"
+      ],
+      "related": ["applications", "comparison"]
+    },
+    {
+      "id": "comparison",
+      "title": "Symmetric vs. asymmetric",
+      "eyebrow": "Technical comparison",
+      "intro": "Symmetric cryptography is especially efficient for repeated operations between systems that already share a trusted key.",
+      "points": [
+        "HMAC verification is computationally lightweight compared with public-key signature verification.",
+        "Symmetric encryption is the practical method for protecting large amounts of data.",
+        "Asymmetric cryptography supports public verification and establishing keys between parties without a prior shared secret.",
+        "Many real-world systems combine asymmetric key establishment with symmetric data protection."
+      ],
+      "related": ["how-it-works", "benefits"]
+    },
+    {
+      "id": "capabilities",
+      "title": "Implementation capabilities",
+      "eyebrow": "Available technology",
+      "intro": "The documented symmetric-attestation implementation provides a concrete example of business-ready authentication mechanisms.",
+      "points": [
+        "HMAC-SHA256 authentication with 256-bit secret keys",
+        "Length-prefixed, identity-bound tokens",
+        "96-bit nonces and replay rejection",
+        "Constant-time authentication-tag comparison",
+        "Key rotation invalidating outstanding tokens",
+        "Configurable verifier interface"
+      ],
+      "related": ["overview", "applications"]
+    }
+  ]
+}
