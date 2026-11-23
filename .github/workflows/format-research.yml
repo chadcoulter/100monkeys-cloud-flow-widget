@@ -2,7 +2,7 @@ name: Fix Research Formatting
 on:
   push:
     branches:
-      - feature/cloud-flow
+      - feature/research-card-symmetric-encryption
 permissions:
   contents: write
 jobs:
@@ -19,14 +19,14 @@ jobs:
           node-version: '24'
           cache: pnpm
       - run: pnpm install --frozen-lockfile --filter @100monkeys/cloud-flow... --filter cloud-flow-demo...
-      - run: pnpm exec prettier --write examples/cloud-flow/e2e/research.spec.ts examples/cloud-flow/src/research.css examples/cloud-flow/src/ResearchBrowser.tsx examples/cloud-flow/src/shell.css examples/cloud-flow/src/symmetric-research.json
-      - run: pnpm exec prettier --check examples/cloud-flow/e2e/research.spec.ts examples/cloud-flow/src/research.css examples/cloud-flow/src/ResearchBrowser.tsx examples/cloud-flow/src/shell.css examples/cloud-flow/src/symmetric-research.json
+      - run: pnpm exec prettier --write examples/cloud-flow/src/wiki.json examples/cloud-flow/e2e/research-card-integration.spec.ts
+      - run: pnpm exec prettier --check examples/cloud-flow/src/wiki.json examples/cloud-flow/e2e/research-card-integration.spec.ts
       - name: Commit formatting
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add examples/cloud-flow/e2e/research.spec.ts examples/cloud-flow/src/research.css examples/cloud-flow/src/ResearchBrowser.tsx examples/cloud-flow/src/shell.css examples/cloud-flow/src/symmetric-research.json
+          git add examples/cloud-flow/src/wiki.json examples/cloud-flow/e2e/research-card-integration.spec.ts
           if ! git diff --cached --quiet; then
             git commit -m "Format research browser files [format completed]"
-            git push origin HEAD:feature/cloud-flow
+            git push origin HEAD:feature/research-card-symmetric-encryption
           fi
