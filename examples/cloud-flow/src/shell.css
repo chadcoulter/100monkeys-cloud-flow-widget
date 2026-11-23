@@ -172,3 +172,6 @@ body,
   flex: 1;
   min-height: 650px;
 }
+
+/* Research mode overrides the demo's historic mobile document-height behavior. */
+#root:has(> .research-viewport) { height:100dvh; min-height:0; max-height:100dvh; overflow:hidden; }
