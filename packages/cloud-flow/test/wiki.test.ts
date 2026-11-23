@@ -8,7 +8,10 @@ import sample from '../../../examples/cloud-flow/src/wiki.json';
 test('wiki JSON supplies full page content, links, ordering and recursive stacks', () => {
   const document = parseWikiDocument(sample);
   const graph = indexGraph(document);
-  assert.equal(document.nodes.length, 10);
+  assert.equal(document.nodes.length, sample.pages.length);
+  assert.ok(graph.nodes.has('symmetric-encryption'));
+  assert.ok(graph.outgoing.get('research')!.some((e) => e.target === 'symmetric-encryption'));
+  assert.ok(graph.outgoing.get('symmetric-encryption')!.some((e) => e.target === 'symmetric-applications'));
   assert.match(graph.nodes.get('parsing')!.content!, /Character, symbol/);
   assert.ok(graph.outgoing.get('home')!.some((e) => e.target === 'redsigma'));
   const state = createView(graph, 'home');
@@ -21,7 +24,7 @@ test('wiki JSON supplies full page content, links, ordering and recursive stacks
     nested.members.map((m) => m.id),
     ['parsing', 'math', 'resolution']
   );
-  assert.equal(graph.nodes.size, 10, 'stack membership does not duplicate pages');
+  assert.equal(graph.nodes.size, sample.pages.length, 'stack membership does not duplicate pages');
 });
 test('wiki JSON validation rejects broken content, page links, stack links and cyclic nesting', () => {
   const badContent = structuredClone(sample);
