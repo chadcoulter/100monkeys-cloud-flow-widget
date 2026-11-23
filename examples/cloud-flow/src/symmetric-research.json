@@ -13,10 +13,7 @@
         "Authenticated encryption such as AES-GCM protects stored and transmitted data.",
         "Nonce tracking and key rotation provide credential lifecycle controls."
       ],
-      "related": [
-        "how-it-works",
-        "capabilities"
-      ]
+      "related": ["how-it-works", "capabilities"]
     },
     {
       "id": "how-it-works",
@@ -28,10 +25,7 @@
         "Unauthorized modifications cause authentication failure.",
         "A unique nonce can make an authentication token single-use."
       ],
-      "related": [
-        "overview",
-        "comparison"
-      ]
+      "related": ["overview", "comparison"]
     },
     {
       "id": "applications",
@@ -52,10 +46,7 @@
         "Business-to-business data exchange",
         "AI services and automated workflows"
       ],
-      "related": [
-        "benefits",
-        "comparison"
-      ]
+      "related": ["benefits", "comparison"]
     },
     {
       "id": "benefits",
@@ -69,10 +60,7 @@
         "Reduced hardware and energy requirements on constrained devices",
         "Tamper detection for messages and business records"
       ],
-      "related": [
-        "applications",
-        "comparison"
-      ]
+      "related": ["applications", "comparison"]
     },
     {
       "id": "comparison",
@@ -85,10 +73,7 @@
         "Asymmetric cryptography supports public verification and establishing keys between parties without a prior shared secret.",
         "Many real-world systems combine asymmetric key establishment with symmetric data protection."
       ],
-      "related": [
-        "how-it-works",
-        "benefits"
-      ]
+      "related": ["how-it-works", "benefits"]
     },
     {
       "id": "capabilities",
@@ -103,10 +88,7 @@
         "Key rotation invalidating outstanding tokens",
         "Configurable verifier interface"
       ],
-      "related": [
-        "overview",
-        "applications"
-      ]
+      "related": ["overview", "applications"]
     }
   ]
 }

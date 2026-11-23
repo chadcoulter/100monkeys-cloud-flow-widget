@@ -6,11 +6,17 @@ test.beforeEach(async ({ page }) => {
 
 test('research stays inside the viewport and opens connected information', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Symmetric Encryption' }).first()).toBeVisible();
-  await page.getByRole('button', { name: /Business applications/i }).first().click();
+  await page
+    .getByRole('button', { name: /Business applications/i })
+    .first()
+    .click();
   await expect(page.getByRole('heading', { name: 'Business applications' })).toBeVisible();
   await page.getByRole('button', { name: /API and service-to-service authentication/i }).click();
   await expect(page.getByText(/request a demonstration of this capability/i)).toBeVisible();
-  await page.getByRole('button', { name: /Symmetric vs. asymmetric/i }).last().click();
+  await page
+    .getByRole('button', { name: /Symmetric vs. asymmetric/i })
+    .last()
+    .click();
   await expect(page.getByRole('heading', { name: 'Symmetric vs. asymmetric' })).toBeVisible();
   await page.getByRole('button', { name: /Back/i }).click();
   await expect(page.getByRole('heading', { name: 'Business applications' })).toBeVisible();
@@ -31,7 +37,10 @@ test('research stays inside the viewport and opens connected information', async
 test.describe('small-screen viewport', () => {
   test.use({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   test('content scrolls internally without extending the document', async ({ page }) => {
-    await page.getByRole('button', { name: /Business applications/i }).first().tap();
+    await page
+      .getByRole('button', { name: /Business applications/i })
+      .first()
+      .tap();
     await expect(page.getByRole('heading', { name: 'Business applications' })).toBeVisible();
     const result = await page.evaluate(() => {
       const scroller = document.querySelector('.research-content-scroll')!;
